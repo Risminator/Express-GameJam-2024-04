@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://cw2wmslkt6lrq"]
+
+[ext_resource type="Texture2D" uid="uid://cwc1q2rs7tqo2" path="res://assets/temp/Green.png" id="1_5kh0l"]
+
+[node name="TestLevel" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1280.0
+offset_bottom = 720.0
+texture = ExtResource("1_5kh0l")
+stretch_mode = 1
