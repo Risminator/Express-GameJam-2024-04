@@ -5,6 +5,7 @@ func _process(delta):
 	if is_ready:
 		var bullet = preload("res://scenes/Projectile.tscn").instantiate()
 		bullet.position = position
+		bullet.direction = (get_global_mouse_position() - position).normalized()
 		get_tree().current_scene.add_child(bullet)
 		is_ready = false
 		$Timer.start()

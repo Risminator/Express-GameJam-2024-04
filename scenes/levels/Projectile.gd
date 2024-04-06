@@ -1,10 +1,10 @@
 extends Area2D
 
-@export var speed = 2
+var bullet_speed = 2
 var direction = Vector2(1,1)
 
 func _physics_process(delta):
-	global_position += direction
+	global_position += direction * bullet_speed
 
 
 

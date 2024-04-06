@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://cw2wmslkt6lrq"]
 
-[ext_resource type="Texture2D" uid="uid://cwc1q2rs7tqo2" path="res://assets/temp/Green.png" id="1_5kh0l"]
+[ext_resource type="Texture2D" uid="uid://d31x4k8ar3c2l" path="res://assets/temp/Green.png" id="1_5kh0l"]
 [ext_resource type="PackedScene" uid="uid://c1plcr586voe2" path="res://scenes/player.tscn" id="2_okx3j"]
-[ext_resource type="PackedScene" uid="uid://xdfvpckm4js6" path="res://scenes/collectible.tscn" id="3_qcn0k"]
-[ext_resource type="PackedScene" uid="uid://qbf5hg24tnb1" path="res://scenes/Enemy.tscn" id="5_6ke86"]
+[ext_resource type="PackedScene" uid="uid://de8kpukiq4h6l" path="res://scenes/collectible.tscn" id="3_qcn0k"]
+[ext_resource type="PackedScene" uid="uid://qbf5hg24tnb1" path="res://scenes/Enemy.tscn" id="4_lhx1l"]
 
 [node name="TestLevel" type="Node2D"]
 
@@ -43,3 +43,5 @@ position = Vector2(605, 166)
 [node name="Collectible9" parent="." instance=ExtResource("3_qcn0k")]
 position = Vector2(556, 302)
 
+[node name="Enemy" parent="." instance=ExtResource("4_lhx1l")]
+position = Vector2(956, 344)
