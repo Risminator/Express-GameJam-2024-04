@@ -1,2 +1,2 @@
-extends Node2D
+extends AnimatableBody2D
 
