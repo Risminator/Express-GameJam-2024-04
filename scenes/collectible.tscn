@@ -1,15 +1,25 @@
-[gd_scene load_steps=3 format=3 uid="uid://xdfvpckm4js6"]
+[gd_scene load_steps=4 format=3 uid="uid://de8kpukiq4h6l"]
 
 [ext_resource type="Script" path="res://scenes/levels/Collectible.gd" id="1_p86a2"]
+[ext_resource type="Texture2D" uid="uid://bkok1v5cvpc2y" path="res://assets/collectibles/skullSpriteSheet.png" id="2_52lfu"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_mgo3w"]
-radius = 30.2655
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wt0h3"]
+size = Vector2(45, 48)
 
 [node name="Collectible" type="Area2D"]
+collision_layer = 2
 script = ExtResource("1_p86a2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(823, 249)
-shape = SubResource("CircleShape2D_mgo3w")
+position = Vector2(1.5, 0)
+shape = SubResource("RectangleShape2D_wt0h3")
+
+[node name="SkullSprite" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+texture_filter = 1
+scale = Vector2(3, 3)
+texture = ExtResource("2_52lfu")
+region_enabled = true
+region_rect = Rect2(0, 0, 16, 16)
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
