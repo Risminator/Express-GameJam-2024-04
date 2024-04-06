@@ -15,6 +15,7 @@ stretch_mode = 1
 [node name="Player" parent="." instance=ExtResource("2_okx3j")]
 
 [node name="Collectible" parent="." instance=ExtResource("3_qcn0k")]
+position = Vector2(130, 344)
 
 [node name="Collectible2" parent="." instance=ExtResource("3_qcn0k")]
 position = Vector2(170, 183)
@@ -24,3 +25,18 @@ position = Vector2(-269, -83)
 
 [node name="Collectible4" parent="." instance=ExtResource("3_qcn0k")]
 position = Vector2(320, -10)
+
+[node name="Collectible5" parent="." instance=ExtResource("3_qcn0k")]
+position = Vector2(342, 237)
+
+[node name="Collectible6" parent="." instance=ExtResource("3_qcn0k")]
+position = Vector2(-18, 221)
+
+[node name="Collectible7" parent="." instance=ExtResource("3_qcn0k")]
+position = Vector2(-156, 60)
+
+[node name="Collectible8" parent="." instance=ExtResource("3_qcn0k")]
+position = Vector2(97, -66)
+
+[node name="Collectible9" parent="." instance=ExtResource("3_qcn0k")]
+position = Vector2(48, 70)
