@@ -12,3 +12,8 @@ script = ExtResource("1_c5v15")
 shape = SubResource("CircleShape2D_vafat")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
