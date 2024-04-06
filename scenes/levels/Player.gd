@@ -20,8 +20,13 @@ func change_robot_count():
 		var new_robot = preload("res://scenes/robot.tscn").instantiate()
 		new_robot.name = 'Robot' + str(robot_idx)
 		robot_idx += 1
-		add_child(new_robot)
-		robot_count += 1
+		
+		var slots = $Group.get_children()
+		for slot in slots:
+			if slot.get_child_count() < 1:
+				slot.add_child(new_robot)
+				robot_count += 1
+				break
 	if (robot_count > Global.robot_count and robot_idx >= 1):
 		robot_idx -= 1
 		robot_count -= 1

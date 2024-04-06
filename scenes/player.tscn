@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scenes/levels/Player.gd" id="1_rc3bq"]
 [ext_resource type="Script" path="res://scenes/Group.gd" id="2_s7n0v"]
-[ext_resource type="PackedScene" uid="uid://be2xuo8iiokun" path="res://scenes/placeholder.tscn" id="2_vc0b8"]
+[ext_resource type="PackedScene" uid="uid://bnbj3eosmqxfy" path="res://scenes/placeholder.tscn" id="2_vc0b8"]
 [ext_resource type="Texture2D" uid="uid://ciia8cw828cmf" path="res://assets/player/wizardAttack.png" id="3_gepll"]
 [ext_resource type="Texture2D" uid="uid://dvb0bw1fl8s1u" path="res://assets/player/wizardDeath.png" id="4_ilqge"]
 [ext_resource type="Texture2D" uid="uid://bpam4h3dalm1l" path="res://assets/player/wizardIdle.png" id="5_5mnyy"]
@@ -297,45 +297,32 @@ metadata/_edit_group_ = true
 shape = SubResource("CapsuleShape2D_75y6l")
 
 [node name="Group" type="Node2D" parent="."]
+unique_name_in_owner = true
 script = ExtResource("2_s7n0v")
 
 [node name="Placeholder" parent="Group" instance=ExtResource("2_vc0b8")]
 position = Vector2(100, 0)
 
 [node name="Placeholder2" parent="Group" instance=ExtResource("2_vc0b8")]
-position = Vector2(-100, 0)
-coef_x = -1
-coef_y = -1
+position = Vector2(70.711, -70.711)
 
 [node name="Placeholder3" parent="Group" instance=ExtResource("2_vc0b8")]
 position = Vector2(0, -100)
-coef_x = -1
-coef_y = -1
 
 [node name="Placeholder4" parent="Group" instance=ExtResource("2_vc0b8")]
-position = Vector2(0, 100)
-coef_x = -1
-coef_y = -1
+position = Vector2(-70.711, -70.711)
 
 [node name="Placeholder5" parent="Group" instance=ExtResource("2_vc0b8")]
-position = Vector2(70.711, 70.711)
-coef_x = -1
-coef_y = -1
+position = Vector2(-100, 0)
 
 [node name="Placeholder6" parent="Group" instance=ExtResource("2_vc0b8")]
 position = Vector2(-70.711, 70.711)
-coef_x = -1
-coef_y = -1
 
 [node name="Placeholder7" parent="Group" instance=ExtResource("2_vc0b8")]
-position = Vector2(-70.711, -70.711)
-coef_x = -1
-coef_y = -1
+position = Vector2(0, 100)
 
 [node name="Placeholder8" parent="Group" instance=ExtResource("2_vc0b8")]
-position = Vector2(70.711, -70.711)
-coef_x = -1
-coef_y = -1
+position = Vector2(70.711, 70.711)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
