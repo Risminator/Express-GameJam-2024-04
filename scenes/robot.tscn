@@ -1,14 +1,69 @@
-[gd_scene load_steps=3 format=3 uid="uid://dt0sexd16vwlo"]
+[gd_scene load_steps=11 format=3 uid="uid://dt0sexd16vwlo"]
 
 [ext_resource type="Script" path="res://scenes/levels/Robot.gd" id="1_8u2nb"]
+[ext_resource type="Texture2D" uid="uid://h8ik5d3pttox" path="res://assets/robot/robot.png" id="2_ecnwr"]
+[ext_resource type="Texture2D" uid="uid://bkok1v5cvpc2y" path="res://assets/collectibles/skullSpriteSheet.png" id="3_bfsv2"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_b44or"]
 radius = 24.0832
 
-[node name="Robot" type="AnimatableBody2D"]
-position = Vector2(94, 0)
-sync_to_physics = false
+[sub_resource type="AtlasTexture" id="AtlasTexture_huwrc"]
+atlas = ExtResource("2_ecnwr")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bf88r"]
+atlas = ExtResource("2_ecnwr")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ey68o"]
+atlas = ExtResource("2_ecnwr")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k41wo"]
+atlas = ExtResource("2_ecnwr")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hsf80"]
+atlas = ExtResource("3_bfsv2")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lcdyx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_huwrc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bf88r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ey68o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k41wo")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hsf80")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[node name="Robot" type="Node2D"]
 script = ExtResource("1_8u2nb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_b44or")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-3, 12)
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_lcdyx")
+autoplay = "default"

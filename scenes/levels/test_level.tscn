@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://cw2wmslkt6lrq"]
 
-[ext_resource type="Texture2D" uid="uid://b851exjltkr30" path="res://assets/temp/Green.png" id="1_5kh0l"]
+[ext_resource type="Texture2D" uid="uid://cwc1q2rs7tqo2" path="res://assets/temp/Green.png" id="1_5kh0l"]
 [ext_resource type="PackedScene" uid="uid://c1plcr586voe2" path="res://scenes/player.tscn" id="2_okx3j"]
 [ext_resource type="PackedScene" uid="uid://xdfvpckm4js6" path="res://scenes/collectible.tscn" id="3_qcn0k"]
 [ext_resource type="PackedScene" uid="uid://qbf5hg24tnb1" path="res://scenes/Enemy.tscn" id="5_6ke86"]
@@ -14,33 +14,32 @@ texture = ExtResource("1_5kh0l")
 stretch_mode = 1
 
 [node name="Player" parent="." instance=ExtResource("2_okx3j")]
+position = Vector2(508, 232)
 
 [node name="Collectible" parent="." instance=ExtResource("3_qcn0k")]
-position = Vector2(130, 344)
+position = Vector2(638, 576)
 
 [node name="Collectible2" parent="." instance=ExtResource("3_qcn0k")]
-position = Vector2(170, 183)
+position = Vector2(678, 415)
 
 [node name="Collectible3" parent="." instance=ExtResource("3_qcn0k")]
-position = Vector2(-269, -83)
+position = Vector2(239, 149)
 
 [node name="Collectible4" parent="." instance=ExtResource("3_qcn0k")]
-position = Vector2(320, -10)
+position = Vector2(828, 222)
 
 [node name="Collectible5" parent="." instance=ExtResource("3_qcn0k")]
-position = Vector2(342, 237)
+position = Vector2(850, 469)
 
 [node name="Collectible6" parent="." instance=ExtResource("3_qcn0k")]
-position = Vector2(-18, 221)
+position = Vector2(490, 453)
 
 [node name="Collectible7" parent="." instance=ExtResource("3_qcn0k")]
-position = Vector2(-156, 60)
+position = Vector2(352, 292)
 
 [node name="Collectible8" parent="." instance=ExtResource("3_qcn0k")]
-position = Vector2(97, -66)
+position = Vector2(605, 166)
 
 [node name="Collectible9" parent="." instance=ExtResource("3_qcn0k")]
-position = Vector2(48, 70)
+position = Vector2(556, 302)
 
-[node name="Enemy" parent="." instance=ExtResource("5_6ke86")]
-position = Vector2(331, 125)
