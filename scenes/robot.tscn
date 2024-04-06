@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dt0sexd16vwlo"]
+
+[ext_resource type="Script" path="res://scenes/levels/Robot.gd" id="1_8u2nb"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_b44or"]
+radius = 24.0832
+
+[node name="Robot" type="AnimatableBody2D"]
+position = Vector2(94, 0)
+sync_to_physics = false
+script = ExtResource("1_8u2nb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_b44or")

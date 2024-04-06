@@ -12,4 +12,5 @@ func _process(delta):
 
 func _on_body_entered(body):
 	if body.name == "Player":
+		Global.robot_count += 1
 		queue_free()
