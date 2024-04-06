@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://b851exjltkr30" path="res://assets/temp/Green.png" id="1_5kh0l"]
 [ext_resource type="PackedScene" uid="uid://c1plcr586voe2" path="res://scenes/player.tscn" id="2_okx3j"]
 [ext_resource type="PackedScene" uid="uid://xdfvpckm4js6" path="res://scenes/collectible.tscn" id="3_qcn0k"]
-[ext_resource type="PackedScene" uid="uid://du1l8fjmw5ayw" path="res://scenes/Projectile.tscn" id="4_kncot"]
+[ext_resource type="PackedScene" uid="uid://qbf5hg24tnb1" path="res://scenes/Enemy.tscn" id="5_6ke86"]
 
 [node name="TestLevel" type="Node2D"]
 
@@ -42,5 +42,5 @@ position = Vector2(97, -66)
 [node name="Collectible9" parent="." instance=ExtResource("3_qcn0k")]
 position = Vector2(48, 70)
 
-[node name="Projectile" parent="." instance=ExtResource("4_kncot")]
-position = Vector2(391, 397)
+[node name="Enemy" parent="." instance=ExtResource("5_6ke86")]
+position = Vector2(331, 125)
